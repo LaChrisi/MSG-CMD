@@ -1,0 +1,27 @@
+﻿<Window x:Class="MSG4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MSG4"
+        mc:Ignorable="d"
+        Title="MSG Tool V2" Height="289.377" Width="267.139" ResizeMode="NoResize">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="20,213,0,0" VerticalAlignment="Top" Width="220" Click="Button_Click" Height="20" Grid.Column="1"/>
+        <TextBox x:Name="server" HorizontalAlignment="Left" Height="23" Margin="115,61,0,0" TextWrapping="Wrap" Text="NB-02" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBlock x:Name="servertext" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="20,68,0,0" TextWrapping="Wrap" Text="Server:" VerticalAlignment="Top"/>
+        <CheckBox x:Name="wait" Content="" HorizontalAlignment="Left" Margin="115,138,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBlock x:Name="usertext" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="20,103,0,0" TextWrapping="Wrap" Text="User:" VerticalAlignment="Top"/>
+        <TextBox x:Name="user" HorizontalAlignment="Left" Height="23" Margin="115,96,0,0" TextWrapping="Wrap" Text="*" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="20,18,0,0" TextWrapping="Wrap" Text="MSG Tool V2" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <TextBlock x:Name="waittext" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="20,138,0,0" TextWrapping="Wrap" Text="Wait?" VerticalAlignment="Top"/>
+        <TextBox x:Name="text" HorizontalAlignment="Left" Height="23" Margin="115,166,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.512,-0.308" Grid.Column="1"/>
+        <TextBlock x:Name="texttext" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="20,173,0,0" TextWrapping="Wrap" Text="Message:" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
